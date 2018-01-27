@@ -1,0 +1,56 @@
+body{
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h2{
+  color: #1776d5;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.profile{
+  width: calc(100% - 120px);
+  margin: auto;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24);
+  background-color: #b7b7b7;
+  //opacity: 0.13;
+  padding: 40px;
+  display: flex;
+  .avatar{
+    width: 35%;
+  }
+  .info{
+    h3{
+
+    }
+    form{
+      p{
+        color: #131313;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      fieldset{
+        position: relative;
+      }
+      input{
+        color: #464646;
+        width: 204px;
+        height: 33px;
+        border-radius: 10px;
+        border: 1px solid #464646;
+        background-color: #ffffff;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+}
