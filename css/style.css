@@ -121,6 +121,96 @@ h2 {
 .full {
   width: 100%; }
 
+.os-modal {
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .os-modal .modal-body {
+    margin: auto;
+    background-color: white;
+    max-width: 1020px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    position: relative; }
+    .os-modal .modal-body img {
+      width: 250px;
+      height: 250px;
+      display: block;
+      object-fit: cover;
+      margin-right: 40px;
+      margin-top: 30px; }
+    .os-modal .modal-body .info h3 {
+      font-family: "Helvetica - Condensed - Black";
+      font-size: 28px;
+      font-weight: 400;
+      color: #464646;
+      margin-bottom: 18px; }
+    .os-modal .modal-body .info .skills {
+      list-style: none;
+      padding-left: 0px; }
+      .os-modal .modal-body .info .skills li {
+        display: inline-block; }
+        .os-modal .modal-body .info .skills li a {
+          display: inline-block;
+          margin-bottom: 8px;
+          background: #cfcfcf;
+          padding: 2px 13px;
+          border-radius: 2px;
+          color: #ffffff;
+          font-family: Roboto;
+          font-size: 12px;
+          font-weight: 400;
+          text-transform: uppercase; }
+    .os-modal .modal-body .info .contact {
+      list-style: none;
+      padding-left: 0; }
+      .os-modal .modal-body .info .contact li {
+        display: flex; }
+        .os-modal .modal-body .info .contact li span {
+          width: 130px;
+          min-width: 135px;
+          font-family: Roboto;
+          font-size: 20px;
+          font-weight: 700;
+          color: #767676;
+          display: block; }
+    .os-modal .modal-body .info p {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      color: #767676;
+      text-align: justify; }
+    .os-modal .modal-body .info a.go {
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #ffffff;
+      border-radius: 2px;
+      background-color: #111111;
+      padding: 10px 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center; }
+    .os-modal .modal-body .close {
+      position: absolute;
+      float: right;
+      right: 10px;
+      top: 0px;
+      padding: 2px;
+      cursor: pointer;
+      margin: 2px;
+      color: grey;
+      font-size: 32pt;
+      transform: rotate(45deg);
+      display: inline-block; }
+      .os-modal .modal-body .close:before {
+        content: '+'; }
+
 @media only screen and (max-width: 800px) {
   .profile {
     flex-direction: column; }

@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,600">
-    <link rel="stylesheet" href="http://cibist/css/app.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="search-trainers-body">
@@ -16,19 +21,19 @@
             </div>
             <div class="trainer-info col">
                 <p class="name">Verla Johns</p>
-                <p class="description">lorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsum</p>
+                <p class="description">lorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem
+                    inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem
+                    inpsum</p>
                 <div class="tags">
                     <a href="http://cibist/search-trainers?skills=Java" class="tag">Java</a>
                     <a href="http://cibist/search-trainers?skills=Cisco Security" class="tag">Cisco Security</a>
                 </div>
             </div>
             <div class="trainer-actions">
-                <button class="btn btn-primary
-                                                                    signin-button
-                                                                view brnd-20">
+                <button data-profile="1" class="active-btn btn btn-primary                                                                    signin-button                                                                view brnd-20">
                     view profile
                 </button>
-                <button class="btn btn-dark contact brnd-20">contact now</button>
+                <button class=" active-btn btn btn-dark contact brnd-20">contact now</button>
             </div>
         </div>
         <div class="trainer-item row">
@@ -37,19 +42,21 @@
             </div>
             <div class="trainer-info col">
                 <p class="name">Prof. Linwood Gusikowski II</p>
-                <p class="description">lorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsum</p>
+                <p class="description">lorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem
+                    inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem inpsumlorem
+                    inpsum</p>
                 <div class="tags">
                     <a href="http://cibist/search-trainers?skills=Java" class="tag">Java</a>
                     <a href="http://cibist/search-trainers?skills=PHP" class="tag">PHP</a>
                 </div>
             </div>
             <div class="trainer-actions">
-                <button class="btn btn-primary
+                <button data-profile="2"  class="active-btn btn btn-primary
                                                                     signin-button
                                                                 view brnd-20">
                     view profile
                 </button>
-                <button class="btn btn-dark contact brnd-20">contact now</button>
+                <button data-contact="2"  class="active-btn btn btn-dark contact brnd-20">contact now</button>
             </div>
         </div>
     </div>
@@ -60,53 +67,73 @@
 
 
 <!--OS-Modals-->
-<div class="modal-contact">
-    <img src="img/photo.png" alt="">
-    <div class="info">
-        <h3>Phillip Acre</h3>
-        <ul class="skills">
-            <li><a href="">PHP</a></li>
-            <li><a href="">C#</a></li>
-            <li><a href="">HTML5</a></li>
-            <li><a href="">CSS3</a></li>
-        </ul>
-        <ul class="contact">
-            <li><span>E-Mail:</span>philip.acre@gmail.com</li>
-            <li><span>Phone:</span>+ 1 256 376 25 34</li>
-            <li><span>Location:</span>Belgium, Brussels</li>
-            <li><span>Skype</span>philip_acre14</li>
-        </ul>
-        <a href="">VIEW PROFILE</a>
+<div class="os-modal modal-contact">
+    <div class="modal-body">
+        <img src="img/photo.png" alt="">
+        <div class="info">
+            <h3>Phillip Acre</h3>
+            <ul class="skills">
+                <li><a href="">PHP</a></li>
+                <li><a href="">C#</a></li>
+                <li><a href="">HTML5</a></li>
+                <li><a href="">CSS3</a></li>
+            </ul>
+            <ul class="contact">
+                <li><span>E-Mail:</span>
+                    <p> philip.acre@gmail.com</p></li>
+                <li><span>Phone:</span>
+                    <p> + 1 256 376 25 34</p></li>
+                <li><span>Location:</span>
+                    <p> Belgium, Brussels</p></li>
+                <li><span>Skype</span>
+                    <p> philip_acre14</p></li>
+            </ul>
+            <a href="" class="go">VIEW PROFILE</a>
+        </div>
+        <span class="close"></span>
     </div>
 </div>
 
-<div class="modal-contact">
-    <img src="img/photo.png" alt="">
-    <div class="info">
-        <h3>Phillip Acre</h3>
-        <ul class="skills">
-            <li><a href="">PHP</a></li>
-            <li><a href="">C#</a></li>
-            <li><a href="">HTML5</a></li>
-            <li><a href="">CSS3</a></li>
-        </ul>
-        <ul class="contact">
-            <li><span>Education:</span>University of Washington
-                Computer Science
-                Bachelor's Degree</li>
-            <li><span>Experience:</span>University of Washington, Researcher
-                Systemic Group, Senior C# Developer</li>
-            <li><span>Certifications:</span>CCNP Routing and Switching
-                CCNA Security</li>
-        </ul>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-        </p>
-        <a href="">VIEW PROFILE</a>
+<div class="os-modal modal-skills">
+    <div class="modal-body">
+        <img src="img/photo.png" alt="">
+        <div class="info">
+            <h3>Phillip Acre</h3>
+            <ul class="skills">
+                <li><a href="">PHP</a></li>
+                <li><a href="">C#</a></li>
+                <li><a href="">HTML5</a></li>
+                <li><a href="">CSS3</a></li>
+            </ul>
+            <ul class="contact">
+                <li><span>Education:</span>
+                    <p>University of Washington
+                        Computer Science
+                        Bachelor's Degree</p></li>
+                <li><span>Experience:</span>
+                    <p>University of Washington, Researcher
+                        Systemic Group, Senior C# Developer</p></li>
+                <li><span>Certifications:</span>
+                    <p>CCNP Routing and Switching
+                        CCNA Security</p></li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugi.
+            </p>
+            <a href="" class="go">CONTACT NOW</a>
+        </div>
+        <span class="close"></span>
     </div>
 </div>
 
-
+<script src="js/popups.js"></script>
 
 </body>
 </html>
