@@ -123,12 +123,18 @@ h2 {
   width: 100%; }
 
 .os-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center; }
+  .os-modal .err {
+    display: none; }
   .os-modal .modal-body {
     margin: auto;
     background-color: white;
