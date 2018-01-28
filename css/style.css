@@ -160,7 +160,8 @@ h2 {
       list-style: none;
       padding-left: 0px; }
       .os-modal .modal-body .info .skills li {
-        display: inline-block; }
+        display: inline-block;
+        margin-left: 3px; }
         .os-modal .modal-body .info .skills li a {
           display: inline-block;
           margin-bottom: 8px;
