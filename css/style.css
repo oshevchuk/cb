@@ -116,7 +116,8 @@ h2 {
         border: 1px solid #464646;
         background-color: #ffffff;
         padding: 8px;
-        width: 100%; }
+        width: 100%;
+        outline: none; }
 
 .full {
   width: 100%; }
