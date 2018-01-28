@@ -1,3 +1,9 @@
+//Helvetica-Condensed-Black.otf
+@font-face {
+  font-family: "Helvetica - Condensed - Black";
+  src: url('../fonts/Helvetica-Condensed-Black.otf');
+}
+
 body{
 
 }
@@ -16,33 +22,93 @@ h2{
 }
 
 .profile{
-  width: calc(100% - 120px);
+  max-width: 1080px;
+  width: 100%;
   margin: auto;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24);
-  background-color: #b7b7b7;
+  background-color: #f6f6f6;
   //opacity: 0.13;
-  padding: 40px;
+  //padding: 40px;
   display: flex;
   .avatar{
-    width: 35%;
+    width: 43%;
+    margin-top: 100px;
+    div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img{
+        //width: 80%;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+      form{
+        label{
+          color: #ffffff;
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 700;
+          display: inline-block;
+          border-radius: 2px;
+          background-color: #0c58de;
+          padding: 5px 15px;
+          margin: auto;
+          margin-top: 20px;
+        }
+        input{
+          &[type="file"]{
+            opacity: 0;
+            display: block;
+            width: 1px;
+            height: 1px;
+          }
+        }
+      }
+    }
   }
   .info{
+    padding: 40px;
+    padding-left: 0px;
+    width: 57%;
     h3{
-
+      font-family: "Helvetica - Condensed - Black";
+      font-size: 28px;
+      font-weight: 400;
+      color: #464646;
+      margin-bottom: 23px;
+      margin-top: 0;
     }
     form{
+      width: calc(100% - 70px);
       p{
         color: #131313;
         font-family: Roboto;
         font-size: 20px;
         font-weight: 700;
+        margin-bottom: 13px;
+        margin-top: 13px;
       }
-      fieldset{
+      div{
         position: relative;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        span{
+          position: absolute;
+          right: -65px;
+          top:5px;
+        }
       }
       input{
+        mergin-top: 9px;
+        margin-bottom: 9px;
         color: #464646;
-        width: 204px;
+        width: calc(50% - 14px);
         height: 33px;
         border-radius: 10px;
         border: 1px solid #464646;
@@ -50,7 +116,59 @@ h2{
         font-family: Roboto;
         font-size: 14px;
         font-weight: 400;
+        padding: 8px;
+        outline: none;
+        &.full{
+          width: 100%;
+        }
+        &[type="submit"]{
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: #ffffff;
+          min-height: 35px;
+          border-radius: 2px;
+          background-color: #111111;
+          margin-top: 25px;
+        }
       }
+      textarea{
+        border-radius: 10px;
+        border: 1px solid #464646;
+        background-color: #ffffff;
+        padding: 8px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.full{
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .profile{
+    flex-direction: column;
+    .avatar{
+      width: 100%;
+    }
+    .info{
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 510px) {
+  .profile .info form div{
+    flex-direction: column;
+    input{
+      width: 100%;
     }
   }
 }

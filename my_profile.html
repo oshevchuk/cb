@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>my profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -14,7 +20,9 @@
             <img src="img/photo.png" alt="">
             <form action="" method="post">
                 <input type="file" id="image">
+                <div>
                 <label for="image">Change profile photo</label>
+                </div>
             </form>
         </div>
     </div>
@@ -22,43 +30,52 @@
         <h3>Philip Acre</h3>
         <form action="" method="post">
             <p>Education</p>
-            <fieldset>
+            <div>
                 <input type="text" name="university" placeholder="University">
                 <input type="text" name="Specialization" placeholder="Specialization">
+            </div>
+            <div>
                 <input type="text" name="Degree" placeholder="Degree">
-            </fieldset>
+            </div>
             <p>Experience</p>
-            <fieldset>
+            <div id="Experience">
                 <input type="text" name="company_name" placeholder="Company's Name">
                 <input type="text" name="position" placeholder="Position">
-                add more
-            </fieldset>
+                <span class="addExperience">add more</span>
+            </div>
             <p>Certifications</p>
-            <fieldset>
-                <input type="text" name="Certifications" placeholder="Certifications">
-                add more
-            </fieldset>
+            <div id="Certifications">
+                <input type="text" name="Certifications" placeholder="Certifications" class="full">
+                <span class="addCertifications">add more</span>
+            </div>
             <p>Skills</p>
-            <fieldset>
+            <div>
                 <input type="text" name="skills" placeholder="Enter your skills">
-            </fieldset>
+            </div>
             <p>Contact information</p>
-            <fieldset>
+            <div>
                 <input type="text" name="email" placeholder="Email">
                 <input type="text" name="phone_number" placeholder="Phone number">
+            </div>
+            <div>
                 <input type="text" name="skype" placeholder="Skype ID">
-            </fieldset>
+            </div>
             <p>Location</p>
-            <fieldset>
+            <div>
                 <input type="text" name="country" placeholder="Country">
                 <input type="text" name="City" placeholder="City">
-            </fieldset>
+            </div>
             <p>About me</p>
-            <fieldset>
+            <div>
                 <textarea name="about" id="" cols="30" rows="10" placeholder="Tell us more about yourself"></textarea>
-            </fieldset>
+            </div>
+            <div>
+                <input type="submit" value="SAVE CHANGES">
+            </div>
         </form>
     </div>
 </div>
+
+<script src="js/profile.js"></script>
 </body>
 </html>
