@@ -60,9 +60,11 @@ function getContact(id) {
 
 function ShowErr() {
     $('.os-modal').find('.modal-body').hide();
+    $('.os-modal').show();
     $('.os-modal').find('.err').fadeIn(400);
     setTimeout(function () {
         $('.os-modal').find('.modal-body').show();
         $('.os-modal').find('.err').hide();
+        $('.os-modal').hide();
     }, 1000)
 }
